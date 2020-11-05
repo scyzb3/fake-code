@@ -1,0 +1,10 @@
+Algorithm:GCD(x,y)
+Requires:2 integers x and y>=0
+Returns:The GCD for x,y
+if (x mod y==0)
+  return x
+elseif x>y
+  return GCD(x mod y,y)
+else
+  return GCD(x,x mod y)
+endif
