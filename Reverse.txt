@@ -1,0 +1,13 @@
+Algorith:Reverse(myList)
+Requires:a list(myList)
+Returns:another list that is the reverse of myList
+1.return resersehelper(myList,Nil)\\calling helper function
+---------------------------------------------------------------
+Algorith:reversehelper(List1,List3)
+Requires:two list
+Returns:list3 which is the reverse of list1
+if isEmpty(List1) then
+    return List3
+else
+    return  reversehelper(tail(List1),cons(head(List1),List3))
+endif
