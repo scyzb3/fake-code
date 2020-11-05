@@ -1,0 +1,15 @@
+Algorithm:Gx
+Requires:2 integers n and x>0
+Returns:The n multiply x
+if (n==0)
+  return 0 
+else
+  return (x+Gx(x,n-1))
+endif
+
+Algorithm:Fx(x,n)
+if (n==1)
+  return x
+else 
+  return (x*Fx(x,n-1))
+endif
