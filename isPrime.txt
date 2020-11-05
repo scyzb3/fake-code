@@ -1,0 +1,23 @@
+Algorithm:isPrimeHelper(n,m)
+Requires:two integers n,m
+Returns:aBoolean avalue True or False
+If (n==2) || (n==m) then
+  return true
+elseif n mod m == 0
+   return false
+else
+   return isPrimeHelper(n,m+1)
+endif
+
+Let isPrimeHelper=True
+If m^2<=n
+    If (n==2)
+        return True
+    elseif n mod m == 0
+        return False
+    else
+        return isPrimeHelper(n,m+1)
+    endif
+else
+    return isPrimeHelper
+endif 
