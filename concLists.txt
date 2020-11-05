@@ -1,0 +1,18 @@
+Algorithm:concLists(List1,List2)
+Requires:List1,List2
+Returns:takes two lists and concatenates (joins) them together
+If isEmpty(List1)==True
+    return List2
+else
+    return concListsHelper(concListsHelper(List1,Nil),List2)
+endif
+
+Algorithm:concListsHelper(List1,List2)
+Requires:two list
+Returns:takes two lists and concatenates (joins) them together
+if isEmpty(List1)==True then
+    return List2
+else
+    return  concListsHelper(tail(List1),cons(head(List1),List2))
+endif
+
