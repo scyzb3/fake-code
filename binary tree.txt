@@ -1,0 +1,19 @@
+Algorithm: depth(myTree)
+Requires: a tree
+Returns: the depth of tree (a postive integer)
+if isLeaf(myTree) then
+  return 0
+else
+  let d1=depth(left(myTree))
+  let d2=depth(right(myTree))
+  return d=max(d1,d2)+1
+endif
+
+Algorithm: treeSize(myTree)
+Requires: a nonempty binary tree
+Returns: the number of nodes of tree (a postive integer)
+if isLeaf(myTree) then
+  return 0
+else
+  return treeSize(left(myTree))+treeSize(right(myTree))+1
+endif
